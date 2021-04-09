@@ -12,7 +12,7 @@ Airtable.configure({
 var base = Airtable.base('appJJ2cxR8M9OTm2g');
 
 //get the "books" table from the base, select ALL the records, and specify the functions that will receive the data
-base("books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
+base("Table 1").select({}).eachPage(gotPageOfBooks, gotAllBooks);
 
 // an empty array to hold our book data
 const books = [];
